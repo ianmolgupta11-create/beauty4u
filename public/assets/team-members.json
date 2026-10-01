@@ -1,0 +1,85 @@
+[
+  {
+    "id": "kailtyn-whyte",
+    "name": "Kailtyn Whyte",
+    "role": "Hairstylist and Beauty Therapist",
+    "experienceYears": 8,
+    "specialties": [
+      "Hair Colouring & Foils",
+      "Nanoplasty & Keratin",
+      "Precision Cuts",
+      "Beauty Treatments"
+    ],
+    "bio": "Kailtyn brings versatile dual expertise across hair colouring, custom highlights, precision cutting, and beauty therapies at Beauty 4 U Bathurst. She loves tailoring complete transformations for our clients.",
+    "signatureStyle": "Seamless dimensional colour & polished bouncy blow-outs",
+    "favoriteProduct": "Wella Color Touch & Deep Hydration Treatment",
+    "instagramHandle": "@beauty4ubathurst",
+    "rating": 5.0,
+    "reviewCount": 164,
+    "availableDays": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "accentColor": "#B08D57",
+    "avatarPlaceholderColor": "#F8F4EC",
+    "imageUrl": "/assets/team/kaitlyn.jpg"
+  },
+  {
+    "id": "madeline-holding",
+    "name": "Madeline Holding",
+    "role": "Beauty Therapist",
+    "experienceYears": 7,
+    "specialties": [
+      "Hydrodermabrasion Facials",
+      "Lash & Brow Artistry",
+      "Dermal Peels",
+      "Full Body Waxing"
+    ],
+    "bio": "Madeline is dedicated to glowing skin health and bespoke brow and lash design. Her tailored facial therapies and meticulous attention to detail ensure a deeply relaxing, revitalizing visit at Beauty 4 U Bathurst.",
+    "signatureStyle": "Aqua-infusion Hydrodermabrasion & Hybrid Brow Sculpting",
+    "favoriteProduct": "Dermalogica Daily Microfoliant & Hydra-Gel",
+    "instagramHandle": "@beauty4ubathurst",
+    "rating": 5.0,
+    "reviewCount": 148,
+    "availableDays": [
+      "Monday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "accentColor": "#6B7A68",
+    "avatarPlaceholderColor": "#EEF2EC",
+    "imageUrl": "/assets/team/madeline.jpg"
+  },
+  {
+    "id": "sienna-rozema",
+    "name": "Sienna Rozema",
+    "role": "Apprentice Hairdresser & Salon Assistant",
+    "experienceYears": 2,
+    "specialties": [
+      "Relaxing Hair Washes & Scalp Massage",
+      "Blow Waves & Curls",
+      "Apprentice Specials",
+      "Hair Care"
+    ],
+    "bio": "Sienna delivers exceptional basin care, dreamy scalp massages, and long-lasting blow waves and curls. Clients love her gentle technique and welcoming energy at Beauty 4 U Bathurst.",
+    "signatureStyle": "Signature Relaxing Basin Massage & Bouncy Beach Curls",
+    "favoriteProduct": "Mr Smith Luxury Masque & Leave-In Creme",
+    "instagramHandle": "@beauty4ubathurst",
+    "rating": 4.9,
+    "reviewCount": 92,
+    "availableDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "accentColor": "#936D48",
+    "avatarPlaceholderColor": "#FAF5EE",
+    "imageUrl": "/assets/team/sienna.jpg"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "legacy-hero",
+    "url": "/assets/hero-salon.jpg",
+    "createdAt": 1790825662939
+  },
+  {
+    "id": "slide-1",
+    "url": "/assets/hero/slide-1790826145722-1.jpg",
+    "createdAt": 1790826145722
+  },
+  {
+    "id": "slide-2",
+    "url": "/assets/hero/slide-1790826166309-1.jpg",
+    "createdAt": 1790826166309
+  },
+  {
+    "id": "slide-3",
+    "url": "/assets/hero/slide-1790826188775-1.jpg",
+    "createdAt": 1790826188775
+  }
+]

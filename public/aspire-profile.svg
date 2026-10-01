@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Glass Gradient -->
+    <linearGradient id="windowGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#C9D6DF" />
+      <stop offset="35%" stopColor="#E0DDD7" />
+      <stop offset="70%" stopColor="#DFD8CF" />
+      <stop offset="100%" stopColor="#9CAAB5" />
+    </linearGradient>
+
+    <!-- Warm exterior street illumination -->
+    <radialGradient id="exteriorLight" cx="45%" cy="30%" r="65%">
+      <stop offset="0%" stopColor="#FFF8EE" stopOpacity="0.85" />
+      <stop offset="50%" stopColor="#E2DDD5" stopOpacity="0.5" />
+      <stop offset="100%" stopColor="#9EB0BE" stopOpacity="0.8" />
+    </radialGradient>
+
+    <!-- Window condensation blur filter -->
+    <filter id="mistBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04 0.95" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.25 0" />
+      <feComposite in="SourceGraphic" in2="noise" operator="in" />
+    </filter>
+
+    <!-- Vertical water drizzle pattern -->
+    <pattern id="waterDroplets" width="40" height="200" patternUnits="userSpaceOnUse">
+      <path d="M12,0 Q14,40 11,80 Q9,130 12,200" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.55" fill="none" />
+      <path d="M28,0 Q26,60 30,120 Q28,170 29,200" stroke="#7A8B99" stroke-width="1.2" stroke-opacity="0.35" fill="none" />
+      <circle cx="12" cy="45" r="1.5" fill="#FFFFFF" opacity="0.7" />
+      <circle cx="11" cy="95" r="2" fill="#FFFFFF" opacity="0.8" />
+      <circle cx="28" cy="70" r="1.8" fill="#FFFFFF" opacity="0.6" />
+      <circle cx="30" cy="140" r="2.2" fill="#FFFFFF" opacity="0.75" />
+      <circle cx="5" cy="110" r="1.2" fill="#FFFFFF" opacity="0.5" />
+      <circle cx="36" cy="30" r="1.2" fill="#FFFFFF" opacity="0.5" />
+    </pattern>
+
+    <!-- Burgundy Logo Gradient -->
+    <linearGradient id="burgundyLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#631B1E" />
+      <stop offset="100%" stopColor="#4A1417" />
+    </linearGradient>
+
+    <linearGradient id="eucalyptusGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#435246" />
+      <stop offset="100%" stopColor="#253127" />
+    </linearGradient>
+
+    <linearGradient id="productBoxRose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#C29B88" />
+      <stop offset="100%" stopColor="#A88270" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Background Window Glass with condensation -->
+  <rect width="500" height="500" fill="url(#windowGlass)" />
+  <rect width="500" height="500" fill="url(#exteriorLight)" />
+
+  <!-- 2. Dark window frame edge on the left -->
+  <rect x="0" y="0" width="38" height="500" fill="#2B2D2F" />
+  <rect x="38" y="0" width="6" height="500" fill="#1C1E20" opacity="0.8" />
+
+  <!-- 3. Vertical Condensation Runoff Streaks across the pane -->
+  <rect x="44" y="0" width="456" height="500" fill="url(#waterDroplets)" />
+  
+  <!-- Additional thick condensation trickles mirroring the photo -->
+  <g stroke="#FFFFFF" stroke-opacity="0.65" fill="none">
+    <path d="M120,0 C125,70 115,160 122,280 C128,380 120,460 123,500" stroke-width="2.5" />
+    <path d="M175,0 C170,90 178,190 172,310 C168,400 176,470 173,500" stroke-width="3" />
+    <path d="M225,0 C222,60 230,170 226,290 C221,390 228,470 224,500" stroke-width="2" />
+    <path d="M285,0 C290,110 282,230 288,360 C292,440 287,480 289,500" stroke-width="3.5" />
+    <path d="M340,0 C336,80 344,200 338,330 C334,420 342,480 339,500" stroke-width="2.2" />
+    <path d="M395,0 C400,90 392,210 398,340 C402,430 396,480 397,500" stroke-width="3.8" stroke-opacity="0.45" />
+    <path d="M445,0 C442,70 450,180 446,310 C441,410 448,470 444,500" stroke-width="2.8" />
+  </g>
+
+  <!-- Water droplets clustering on glass -->
+  <g fill="#FFFFFF" opacity="0.85">
+    <circle cx="121" cy="140" r="3" />
+    <circle cx="123" cy="240" r="3.5" />
+    <circle cx="173" cy="180" r="4" />
+    <circle cx="171" cy="270" r="3.2" />
+    <circle cx="286" cy="130" r="3.8" />
+    <circle cx="289" cy="220" r="4.2" />
+    <circle cx="340" cy="160" r="2.8" />
+    <circle cx="396" cy="190" r="4.5" />
+    <circle cx="445" cy="230" r="3" />
+  </g>
+
+  <!-- 4. The Authentic Aspire Burgundy Logo applied to window -->
+  <!-- "aspire" in signature serif typography -->
+  <g transform="translate(142, 255)">
+    <!-- Shadow for glass decal depth -->
+    <text x="1.5" y="1.5" 
+          font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" 
+          font-size="78" 
+          font-weight="600" 
+          letter-spacing="-1.5" 
+          fill="#000000" 
+          fill-opacity="0.25">
+      aspire
+    </text>
+    
+    <!-- Main Burgundy Decal -->
+    <text x="0" y="0" 
+          font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" 
+          font-size="78" 
+          font-weight="600" 
+          letter-spacing="-1.5" 
+          fill="url(#burgundyLogo)">
+      aspire
+    </text>
+
+    <!-- Diamond Dot for the 'i' in aspire (authentic mark) -->
+    <!-- Position of the letter 'i' -->
+    <path d="M157,-62 L163,-72 L169,-62 L163,-52 Z" fill="url(#burgundyLogo)" />
+
+    <!-- "Hair" text centered beneath the "ire" -->
+    <text x="122" y="36" 
+          font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" 
+          font-size="32" 
+          font-weight="500" 
+          letter-spacing="1" 
+          fill="url(#burgundyLogo)">
+      Hair
+    </text>
+  </g>
+
+  <!-- 5. Bottom Window Sill & Retail Packaging Foreground -->
+  <!-- Window Sill Line -->
+  <rect x="0" y="475" width="500" height="25" fill="#1A1C1D" />
+
+  <!-- Left: Dried Native Flora in Glass Vase -->
+  <g transform="translate(35, 230)">
+    <!-- Stems -->
+    <path d="M40,240 Q30,160 15,80" stroke="#5E6B58" stroke-width="2.5" fill="none" />
+    <path d="M45,240 Q55,140 70,60" stroke="#4A5645" stroke-width="2.5" fill="none" />
+    <path d="M42,240 Q40,130 35,30" stroke="#3E4739" stroke-width="3" fill="none" />
+    <path d="M38,240 Q20,180 -10,120" stroke="#5E6B58" stroke-width="2" fill="none" />
+    
+    <!-- Eucalyptus Leaves (round gum leaves & slender leaves) -->
+    <ellipse cx="25" cy="110" rx="14" ry="8" transform="rotate(-25 25 110)" fill="url(#eucalyptusGreen)" opacity="0.9" />
+    <ellipse cx="10" cy="85" rx="15" ry="9" transform="rotate(-40 10 85)" fill="url(#eucalyptusGreen)" opacity="0.85" />
+    <ellipse cx="58" cy="95" rx="16" ry="8" transform="rotate(30 58 95)" fill="url(#eucalyptusGreen)" opacity="0.9" />
+    <ellipse cx="72" cy="65" rx="13" ry="7" transform="rotate(45 72 65)" fill="url(#eucalyptusGreen)" opacity="0.85" />
+    <ellipse cx="30" cy="50" rx="15" ry="9" transform="rotate(-15 30 50)" fill="#546657" opacity="0.9" />
+    <ellipse cx="-8" cy="125" rx="14" ry="7" transform="rotate(-50 -8 125)" fill="url(#eucalyptusGreen)" opacity="0.8" />
+
+    <!-- Banksia Dried Seed Pod -->
+    <rect x="52" y="115" width="18" height="32" rx="9" fill="#B08D57" opacity="0.85" />
+    <line x1="56" y1="120" x2="66" y2="120" stroke="#7A5E35" stroke-width="1.5" />
+    <line x1="55" y1="128" x2="67" y2="128" stroke="#7A5E35" stroke-width="1.5" />
+    <line x1="56" y1="136" x2="66" y2="136" stroke="#7A5E35" stroke-width="1.5" />
+
+    <!-- Glass Vase Cylinder -->
+    <rect x="25" y="175" width="46" height="75" rx="4" fill="#FFFFFF" fill-opacity="0.3" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.6" />
+    <!-- Water line in vase -->
+    <path d="M26,205 Q48,208 70,205 L70,248 Q48,250 26,248 Z" fill="#6A8072" fill-opacity="0.4" />
+
+    <!-- Dark Green Luxury Treatment Box next to vase -->
+    <rect x="76" y="200" width="48" height="50" rx="2" fill="#1C2F22" />
+    <line x1="76" y1="200" x2="124" y2="200" stroke="#2B4633" stroke-width="2" />
+  </g>
+
+  <!-- Right: Retail Salon Box (Dusty Rose / Kraft box from photo) -->
+  <g transform="translate(340, 405)">
+    <!-- Box Body -->
+    <rect x="0" y="0" width="160" height="95" rx="3" fill="url(#productBoxRose)" />
+    <!-- Top Lid line -->
+    <rect x="0" y="0" width="160" height="18" fill="#8E6A59" />
+    
+    <!-- Vertical Label Strap (like in the photo) -->
+    <rect x="58" y="0" width="44" height="95" fill="#EAE2DC" fill-opacity="0.9" />
+    <text x="80" y="42" font-family="sans-serif" font-size="9" font-weight="600" text-anchor="middle" fill="#5E4338" letter-spacing="1">
+      FUSION
+    </text>
+    <line x1="68" y1="52" x2="92" y2="52" stroke="#8E6A59" stroke-width="1" />
+    <line x1="65" y1="72" x2="95" y2="72" stroke="#8E6A59" stroke-width="0.8" />
+  </g>
+</svg>

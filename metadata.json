@@ -1,0 +1,6 @@
+{
+  "name": "Aspire Hair & Body Spa",
+  "description": "Premier Australian hair lounge and body spa offering artisanal balayage, precision cuts, Showpony extensions, Kerasilk smoothing, and online booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
